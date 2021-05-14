@@ -1,0 +1,8 @@
+.restaurant__card img {
+  @include card-img ;
+}
+.heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

@@ -1,0 +1,11 @@
+.localisation {
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+  }
+  .localisation_city p{
+    @include localisation;
+  }
+  

@@ -1,0 +1,7 @@
+.process__steps--number {
+    @include process-number;
+    @include tablet {
+      right: 0;
+      top: -15px;
+    }
+  }
