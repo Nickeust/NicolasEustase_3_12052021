@@ -1,0 +1,19 @@
+{
+  "name": "nicolaseustase_3_12052021",
+  "version": "1.0.0",
+  "description": "ohmyfood p3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickeust/NicolasEustase_3_12052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickeust/NicolasEustase_3_12052021/issues"
+  },
+  "homepage": "https://github.com/Nickeust/NicolasEustase_3_12052021#readme"
+}
