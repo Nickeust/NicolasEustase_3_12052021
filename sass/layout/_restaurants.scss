@@ -1,8 +1,54 @@
+.restaurants {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  @include desktop {
+    padding: 0 20%;
+  }
+
+  .restaurants__title {
+    padding-left: 1.5rem;
+    @include tablet {
+      text-align: center;
+    }
+  } 
+
+.restaurant__card {
+  @include card;
+  @include tablet {
+    width: 40%;
+  }
+}
+
+.restaurant__card-new {  
+  @include card-new;
+    p {
+      margin: 0;
+    }
+}
 .restaurant__card img {
   @include card-img ;
 }
-.heart {
+
+.restaurant__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.restaurant__block-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant__block-hearth {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}

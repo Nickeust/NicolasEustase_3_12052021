@@ -1,3 +1,16 @@
+.process__title {
+  padding-left: 1.5rem;
+  @include desktop {
+    display: flex;
+    justify-content: left;
+    margin-left: 1rem;
+  }
+}
+
+.process__steps{
+  padding: 1.5rem;
+}
+
 .process__steps--number {
     @include process-number;
     @include tablet {
@@ -5,3 +18,13 @@
       top: -15px;
     }
   }
+
+.process__steps--icon {
+    color: #b2b2b2;
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 1em;
+}
+.fas.fa-store{
+  color:$color-primary
+}
