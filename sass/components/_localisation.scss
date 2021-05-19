@@ -1,11 +1,17 @@
-.localisation {
-    background: #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 5px 5px 0px #dddddd;
-  }
-  .localisation_city p{
-    @include localisation;
-  }
+.localisation{
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
   
+  &__icon {
+    padding-right: 1rem;
+    font-size: 1.1em;
+    color: #000000c7;
+    padding-bottom: 0.4rem;
+    }
+  &__city p {
+    @include localisation;
+    }
+}

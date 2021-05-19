@@ -42,6 +42,30 @@ body, html {
   box-shadow: 4px 4px 6px #000;
 }
 
+.order__btn button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin: 30px 0;
+  padding: 20px;
+  width: 50%;
+}
+@media screen and (min-width: 1280px) {
+  .order__btn button {
+    width: 25%;
+  }
+}
+.order__btn button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
+}
+
 .localisation {
   background: #eaeaea;
   display: flex;
@@ -49,13 +73,19 @@ body, html {
   align-items: center;
   box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
-
-.localisation_city p {
+.localisation__icon {
+  padding-right: 1rem;
+  font-size: 1.1em;
+  color: #000000c7;
+  padding-bottom: 0.4rem;
+}
+.localisation__city p {
   font-size: 1rem;
-  padding: 20px 5px 20px 5px;
-  margin-top: 5px;
+  padding: 1rem 0 1rem 0;
+  margin: 0rem;
   text-align: center;
-  width: 150px;
+  font-weight: bold;
+  color: #000000c7;
 }
 
 .process__steps li {
@@ -68,6 +98,12 @@ body, html {
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
+}
+.process__steps li:hover {
+  background: #f2eafb;
+}
+.process__steps li:hover .process__steps--icon {
+  color: #9356dc;
 }
 @media screen and (min-width: 768px) {
   .process__steps li {
@@ -83,8 +119,64 @@ body, html {
   }
 }
 
+.menu__title {
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1280px) {
+  .menu__title {
+    padding: 10px 90px;
+  }
+}
+
+.meals {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
+}
+.meals:hover {
+  padding-right: 75px;
+}
+.meals:hover .cross {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.meals:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+
 .header h1 {
   text-align: center;
+  margin: 0 0 0.4rem 0;
+  font-size: 1.5rem;
+  flex-grow: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 1.3em;
+}
+
+.header__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 footer {
@@ -95,16 +187,18 @@ footer {
 
 h3 {
   font-family: "Shrikhand", "sans-serif";
-  padding: 5px 0 20px 0;
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 0 0 0.8rem;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 ul li {
-  padding: 5px 0 5px 0;
+  padding: 0.2rem 0 0.2rem 0;
 }
 ul li a {
   color: white;
@@ -122,6 +216,7 @@ ul li a {
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
   .restaurants {
@@ -137,6 +232,7 @@ ul li a {
 }
 .restaurants .restaurants__title {
   padding-left: 1.5rem;
+  margin: 3rem 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .restaurants .restaurants__title {
@@ -161,7 +257,7 @@ ul li a {
   border: 5px solid #99E2D0;
   border-radius: 5px;
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 5%;
 }
 .restaurants .restaurant__card-new p {
@@ -200,6 +296,7 @@ ul li a {
 
 .process__title {
   padding-left: 1.5rem;
+  margin: 3rem 0 0 0;
 }
 @media screen and (min-width: 1280px) {
   .process__title {
@@ -211,6 +308,7 @@ ul li a {
 
 .process__steps {
   padding: 1.5rem;
+  margin: 0;
 }
 
 .process__steps--number {
@@ -240,8 +338,29 @@ ul li a {
   font-size: 1em;
 }
 
-.fas.fa-store {
-  color: #9356DC;
+.main__menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .full__menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left: 10px;
+}
+
+.order__btn {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

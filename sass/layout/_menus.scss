@@ -1,0 +1,21 @@
+.main__menu {
+  @include main-menu;
+}
+
+.full__menu {
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.line {
+  width: 40px;
+  border: 2px solid $color-tertiary;
+  margin-left: 10px;
+}
+
+.order__btn {
+  display: flex;
+  justify-content: center;
+}

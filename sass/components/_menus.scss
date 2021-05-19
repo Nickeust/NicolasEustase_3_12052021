@@ -1,0 +1,11 @@
+.menu__title {
+    @include menu-title;
+    @include desktop {
+        padding: 10px 90px;
+    }
+}
+
+.meals {
+    @include meals;
+}
+

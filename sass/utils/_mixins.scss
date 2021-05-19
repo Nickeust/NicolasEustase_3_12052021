@@ -1,9 +1,16 @@
+@mixin header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin localisation {
-    font-size: 1rem;
-    padding: 20px 5px 20px 5px;
-    margin-top: 5px;
-    text-align: center;
-    width: 150px;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0;
+  margin: 0rem;
+  text-align: center;
+  font-weight: bold;
+    color: #000000c7;
 }
 
 @mixin slogan {
@@ -12,7 +19,7 @@
     padding: 40px 0;
   }
 
-@mixin slogan-btn {
+@mixin button {
     background-image: $linear-gradient;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -37,7 +44,7 @@
     right: 10px;
   }
 
-@mixin process-li {
+@mixin process-li{
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: flex-start;
@@ -47,7 +54,13 @@
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
+  &:hover {
+    background: #f2eafb;
+    .process__steps--icon {
+      color: #9356dc;
+    }
   }
+}
 
   @mixin card {
     border-radius: 25px;
@@ -63,7 +76,7 @@
     border: 5px solid $color-tertiary;
     border-radius: 5px;
     position: absolute;
-    right: 1%;
+    right: 2%;
     top: 5%;
   }
 
@@ -75,6 +88,44 @@
     height: 10rem;
   }
 
+  @mixin main-menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+  }
+
+  @mixin menu-title {
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  @mixin meals {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+    &:hover {
+      padding-right: 75px;
+    }
+    &:hover .cross {
+      opacity: 1;
+      transform: translate(-50px);
+    }
+    &:hover .fa-check-circle {
+      transform: rotate(360deg) ;
+    }
+  }
 @mixin tablet {
   @media screen and (min-width:map-get($breakpoints, tablet)){
     @content;
