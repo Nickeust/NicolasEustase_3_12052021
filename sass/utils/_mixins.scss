@@ -40,8 +40,7 @@
     border: 0.125rem solid $color-primary;
     width: 1.563rem;
     height: 1.563rem;
-    position: relative;
-    right: 0.625rem;
+    transform:translateX(-1rem) ;
   }
 
 @mixin process-li{
@@ -93,6 +92,7 @@
     border-top-left-radius: 1.563rem;
     border-top-right-radius: 1.563rem;
     width: 100%;
+    transform: translateY(-50px);
   }
 
   @mixin menu-title {

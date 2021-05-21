@@ -1,0 +1,21 @@
+.loadingspinner {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+    animation: loader-fadeout 3s forwards;
+
+    &__logo {
+        font-size: 3rem;
+        animation: animation-logo 0.6s ease-in-out;
+        animation-iteration-count: infinite ;
+    }
+}
+

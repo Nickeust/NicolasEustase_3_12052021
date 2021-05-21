@@ -1,0 +1,44 @@
+@keyframes animation-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: scale(3, 3);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+@keyframes loader-fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fill {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
