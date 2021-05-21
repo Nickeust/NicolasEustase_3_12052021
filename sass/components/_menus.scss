@@ -1,7 +1,7 @@
 .menu__title {
     @include menu-title;
     @include desktop {
-        padding: 10px 90px;
+        padding: 0.625rem 5.625rem;
     }
 }
 
@@ -9,3 +9,34 @@
     @include meals;
 }
 
+.meals h4 {
+    margin: 0;
+}
+
+.starter h3, .dish h3, .dessert h3 {
+    padding-left: 0.625rem;
+    text-transform: uppercase;
+    margin-bottom: 0.313rem;
+    font-family: 'Roboto';
+}
+
+.last__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.last__line p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include desktop {
+        padding-right: 20px;
+    }
+}
+
+.last__line span {
+    margin-right: 5px;
+}

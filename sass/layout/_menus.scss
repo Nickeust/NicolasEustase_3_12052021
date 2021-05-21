@@ -10,9 +10,13 @@
 }
 
 .line {
-  width: 40px;
-  border: 2px solid $color-tertiary;
-  margin-left: 10px;
+  width: 2.5rem;
+  border: 0.125rem solid $color-tertiary;
+  margin-left: 0.625rem;
+}
+
+.cross {
+  @include cross;
 }
 
 .order__btn {
