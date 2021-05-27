@@ -9,9 +9,8 @@
 
 .order__btn button{
   @include button;
-  margin: 1.875rem 0;
-  padding: 0.8rem;
-  width: 50%;
+  padding: 1rem;
+  width: 40%;
   @include desktop {
     width: 25%;
   }

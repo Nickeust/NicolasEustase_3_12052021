@@ -1,8 +1,9 @@
 .header h1 {
     text-align: center;
-    margin: 0 0 0.4rem 0;
     font-size: 1.5rem;
     flex-grow: 0.8;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .header {
@@ -11,6 +12,7 @@
 
 .arrow {
   font-size: 1.3em;
+  margin-bottom: -0.5rem;
 }
 
 .header__img img{

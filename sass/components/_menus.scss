@@ -11,8 +11,13 @@
 
 .meals h4 {
     margin: 0;
+    font-size: 1.1em;
+    padding-bottom: 0.4rem;
 }
 
+.starter, .dish {
+    margin-bottom: 2rem;
+}
 .starter h3, .dish h3, .dessert h3 {
     padding-left: 0.625rem;
     text-transform: uppercase;

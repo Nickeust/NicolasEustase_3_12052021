@@ -19,11 +19,15 @@
       right: 0;
       top: -0.938rem;
     }
+    @include desktop {
+      right: 0;
+      top: -0.938rem;
+    }
   }
 
 .process__steps--icon {
     color: #b2b2b2;
     margin-right: 1.5rem;
     margin-left: 0.5rem;
-    font-size: 1em;
+    font-size: 1.2em;
 }
