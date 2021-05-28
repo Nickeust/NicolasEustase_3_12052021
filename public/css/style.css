@@ -16,12 +16,6 @@
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.8;
-  }
-  75% {
-    opacity: 0.5;
-  }
   100% {
     opacity: 0;
   }
@@ -29,9 +23,6 @@
 @keyframes fill {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -170,7 +161,7 @@ body, html {
     margin: 1.25rem 0;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -459,15 +450,17 @@ ul li a {
 @media screen and (min-width: 768px) {
   .process__steps {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .process__steps {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 2rem;
   }
 }
 
@@ -575,7 +568,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  animation: loader-fadeout 3s forwards;
+  animation: loader-fadeout 0.5s 3s ease-out forwards;
 }
 .loadingspinner__logo {
   font-size: 3rem;
