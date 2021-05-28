@@ -7,6 +7,11 @@
 }
 
 .full__menu {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
   @include desktop {
     display: flex;
     justify-content: space-around;

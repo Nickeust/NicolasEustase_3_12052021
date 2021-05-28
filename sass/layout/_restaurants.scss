@@ -5,12 +5,10 @@
   padding-bottom: 3rem;
   @include tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
   }
-  @include desktop {
-    padding: 0 20%;
-  }
+
 
   .restaurants__title {
     padding-left: 1.5rem;
@@ -18,13 +16,33 @@
     @include tablet {
       text-align: center;
     }
+    @include desktop {
+      font-size: 2rem;
+      margin: 3rem;
+    }
   } 
 
+.restaurant__cards {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    justify-items: center;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    justify-items: center;
+  }
+}
 .restaurant__card {
   @include card;
-  @include tablet {
-    width: 40%;
-  }
+    @include desktop {
+    width: 70%;
+    }
 }
 
 .restaurant__card-new {  

@@ -4,6 +4,26 @@ body {
   width: 100%;
   font-size: 1rem;
 }
+header {
+  @include desktop {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+main {
+  @include desktop {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+footer {
+  @include desktop {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 * {
   box-sizing: border-box;
 }

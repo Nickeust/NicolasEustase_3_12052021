@@ -1,27 +1,44 @@
 .process__title {
   padding-left: 1.5rem;
   margin: 3rem 0 0 0;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    padding-left: unset;
+  }
   @include desktop {
     display: flex;
-    justify-content: left;
-    margin-left: 1rem;
+    justify-content: center;
+    padding-left: unset;
   }
 }
 
 .process__steps{
   padding: 1.5rem;
   margin: 0;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .process__steps--number {
     @include process-number;
     @include tablet {
-      right: 0;
-      top: -0.938rem;
+      right: -0.4rem;
+      top: -1rem;
+      position: relative;
     }
     @include desktop {
-      right: 0;
-      top: -0.938rem;
+      right: -0.4rem;
+      top: -1rem;
+      position: relative;
     }
   }
 
