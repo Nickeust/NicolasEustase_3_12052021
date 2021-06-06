@@ -19,3 +19,41 @@
     }
 }
 
+.localisation{
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0rem 0.313rem 0.313rem 0rem #dddddd;
+    
+    &__icon {
+      padding-right: 1rem;
+      font-size: 1.1em;
+      color: #000000c7;
+      padding-bottom: 0.4rem;
+      }
+    &__city p {
+      @include localisation;
+      }
+}
+
+.slogan {
+    @include slogan;
+      p {
+        color: #4d4d4d;
+        margin: 1rem 1rem 2rem 1rem;
+      }
+    }
+
+.process__steps li {
+    @include process-li;
+    @include tablet {
+      margin: 1.25rem 0;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+    @include desktop {
+      width: 50%;
+    }
+}
