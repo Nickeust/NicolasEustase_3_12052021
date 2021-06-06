@@ -11,9 +11,6 @@
   @include button;
   padding: 1rem;
   width: 40%;
-  @include desktop {
-    width: 25%;
-  }
   &:hover {
     background-color: lighten(#9356dc, 10%);
     background-blend-mode: lighten;

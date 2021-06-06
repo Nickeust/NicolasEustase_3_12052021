@@ -6,7 +6,6 @@
   @include tablet {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
   }
 
 
@@ -15,10 +14,10 @@
     margin: 3rem 0 0 0;
     @include tablet {
       text-align: center;
+      font-size: 2rem;
     }
     @include desktop {
       font-size: 2rem;
-      margin: 3rem;
     }
   } 
 
@@ -26,23 +25,16 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     padding: 2rem;
-    justify-items: center;
   }
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     padding: 2rem;
-    justify-items: center;
   }
 }
 .restaurant__card {
   @include card;
-    @include desktop {
-    width: 70%;
-    }
 }
 
 .restaurant__card-new {  

@@ -105,11 +105,6 @@ body, html {
   padding: 1rem;
   width: 40%;
 }
-@media screen and (min-width: 1280px) {
-  .order__btn button {
-    width: 25%;
-  }
-}
 .order__btn button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
@@ -258,7 +253,6 @@ body, html {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -294,6 +288,12 @@ footer {
   padding: 1.563rem;
   color: white;
 }
+@media screen and (min-width: 1280px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 h3 {
   font-family: "Shrikhand", "sans-serif";
@@ -301,14 +301,31 @@ h3 {
   font-weight: 500;
   margin: 0 0 0.8rem;
 }
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 2em;
+  }
+}
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 1280px) {
+  ul {
+    display: flex;
+  }
+}
 ul li {
   padding: 0.2rem 0 0.2rem 0;
+}
+@media screen and (min-width: 1280px) {
+  ul li {
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
+    padding-top: 2rem;
+  }
 }
 ul li a {
   color: white;
@@ -332,7 +349,6 @@ ul li a {
   .restaurants {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
   }
 }
 .restaurants .restaurants__title {
@@ -342,30 +358,26 @@ ul li a {
 @media screen and (min-width: 768px) {
   .restaurants .restaurants__title {
     text-align: center;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .restaurants .restaurants__title {
     font-size: 2rem;
-    margin: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
   .restaurants .restaurant__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     padding: 2rem;
-    justify-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .restaurants .restaurant__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     padding: 2rem;
-    justify-items: center;
   }
 }
 .restaurants .restaurant__card {
@@ -374,11 +386,6 @@ ul li a {
   margin: 1.5rem;
   position: relative;
   background: #fff;
-}
-@media screen and (min-width: 1280px) {
-  .restaurants .restaurant__card {
-    width: 70%;
-  }
 }
 .restaurants .restaurant__card-new {
   color: #008766;
@@ -471,7 +478,6 @@ ul li a {
   background: #9356DC;
   color: #fff;
   border-radius: 50%;
-  border: 0.125rem solid #9356DC;
   width: 1.563rem;
   height: 1.563rem;
   transform: translateX(-1rem);
@@ -514,13 +520,16 @@ ul li a {
   .full__menu {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1280px) {
   .full__menu {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
