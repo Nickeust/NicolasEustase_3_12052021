@@ -6,11 +6,6 @@
     justify-content: center;
     padding-left: unset;
   }
-  @include desktop {
-    display: flex;
-    justify-content: center;
-    padding-left: unset;
-  }
 }
 
 .process__steps{
@@ -22,22 +17,11 @@
     align-items: center;
     gap: 2rem;
   }
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-  }
 }
 
 .process__steps--number {
     @include process-number;
     @include tablet {
-      right: -0.4rem;
-      top: -1rem;
-      position: relative;
-    }
-    @include desktop {
       right: -0.4rem;
       top: -1rem;
       position: relative;

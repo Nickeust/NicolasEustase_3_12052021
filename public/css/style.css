@@ -226,19 +226,7 @@ ul li a {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .restaurants .restaurants__title {
-    font-size: 2rem;
-  }
-}
 @media screen and (min-width: 768px) {
-  .restaurants .restaurant__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
   .restaurants .restaurant__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,27 +285,12 @@ ul li a {
     padding-left: unset;
   }
 }
-@media screen and (min-width: 1280px) {
-  .process__title {
-    display: flex;
-    justify-content: center;
-    padding-left: unset;
-  }
-}
 
 .process__steps {
   padding: 1.5rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
-  .process__steps {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
   .process__steps {
     display: flex;
     flex-direction: row;
@@ -338,13 +311,6 @@ ul li a {
   transform: translateX(-1rem);
 }
 @media screen and (min-width: 768px) {
-  .process__steps--number {
-    right: -0.4rem;
-    top: -1rem;
-    position: relative;
-  }
-}
-@media screen and (min-width: 1280px) {
   .process__steps--number {
     right: -0.4rem;
     top: -1rem;
@@ -372,14 +338,6 @@ ul li a {
 }
 
 @media screen and (min-width: 768px) {
-  .full__menu {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1280px) {
   .full__menu {
     display: flex;
     justify-content: space-around;
