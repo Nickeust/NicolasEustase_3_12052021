@@ -6,6 +6,7 @@ body {
 }
 header {
   @include desktop {
+    /*! max-width large screen !*/
     max-width: 1440px;
     margin: auto;
   }
@@ -13,6 +14,7 @@ header {
 
 main {
   @include desktop {
+    /*! max-width large screen !*/
     max-width: 1440px;
     margin: auto;
   }
@@ -20,6 +22,7 @@ main {
 
 footer {
   @include desktop {
+    /*! max-width large screen !*/
     max-width: 1440px;
     margin: auto;
   }

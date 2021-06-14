@@ -1,3 +1,4 @@
+
 .process__title {
   padding-left: 1.5rem;
   margin: 3rem 0 0 0;
@@ -19,6 +20,7 @@
   }
 }
 
+/*! process step number  round !*/
 .process__steps--number {
     @include process-number;
     @include tablet {
@@ -28,6 +30,7 @@
     }
   }
 
+/*! process step icon!*/
 .process__steps--icon {
     color: #b2b2b2;
     margin-right: 1.5rem;

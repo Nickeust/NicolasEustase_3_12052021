@@ -1,3 +1,4 @@
+/*! Button explore restaurant !*/
 .slogan__btn button{
   @include button;
   &:hover {
@@ -7,6 +8,7 @@
   }
 }
 
+/*! Button order restaurant !*/
 .order__btn button{
   @include button;
   padding: 1rem;

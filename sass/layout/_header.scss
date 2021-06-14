@@ -1,9 +1,12 @@
+/*! Header !*/
 .header {
     @include header;
+    /*! arrow to back index !*/
     &__arrow {
       font-size: 1.3em;
     margin-bottom: -0.5rem;
     }
+    /*! Logo Ohmyfood !*/
     &__logo {
       text-align: center;
       font-size: 1.5rem;
@@ -13,6 +16,7 @@
     }
 }
 
+/*! img background header !*/
 .header__img img{
   object-fit: cover;
   width: 100%;
