@@ -180,6 +180,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .footer__block {
+    display: flex;
+    align-items: center;
+  }
+}
+
 h3 {
   font-family: "Shrikhand", "sans-serif";
   font-size: 1.2rem;
@@ -189,6 +196,8 @@ h3 {
 @media screen and (min-width: 1280px) {
   h3 {
     font-size: 1.8em;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
   }
 }
 
@@ -207,9 +216,8 @@ ul li {
 }
 @media screen and (min-width: 1280px) {
   ul li {
-    padding-right: 5.5rem;
-    padding-left: 5.5rem;
-    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 ul li a {

@@ -8,6 +8,12 @@ footer {
       justify-content: center;
     }
   }
+  .footer__block {
+    @include desktop {
+    display: flex ;
+    align-items: center ;
+  }
+  }
     h3 {
       font-family: "Shrikhand", "sans-serif";
       font-size: 1.2rem;
@@ -15,6 +21,8 @@ footer {
       margin: 0 0 0.8rem;
       @include desktop {
         font-size: 1.8em;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
       }
     }
     ul {
@@ -28,9 +36,8 @@ footer {
       li {
         padding: 0.2rem 0 0.2rem 0;
         @include desktop {
-          padding-right: 5.5rem;
-          padding-left: 5.5rem;
-          padding-top: 2rem;
+          padding-right: 2rem;
+          padding-left: 2rem;
         }
   
         a {
