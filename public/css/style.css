@@ -1,3 +1,5 @@
+/*! Breakpoints adaptative device !*/
+/*! Spinner loader logo animation !*/
 @keyframes animation-logo {
   0% {
     transform: rotate(0deg);
@@ -12,6 +14,7 @@
     transform: scale(1);
   }
 }
+/*! background spinner loader opacity!*/
 @keyframes loader-fadeout {
   0% {
     opacity: 1;
@@ -20,6 +23,7 @@
     opacity: 0;
   }
 }
+/*! animation opacity fill hearth like !*/
 @keyframes fill {
   0% {
     opacity: 0;
@@ -28,6 +32,9 @@
     opacity: 1;
   }
 }
+/*! button mixin !*/
+/*! mixin for breakpoints tablet !*/
+/*! mixin for breakpoints desktop !*/
 body {
   margin: 0;
   padding: 0;
@@ -224,6 +231,11 @@ ul li a {
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
+  /*! restaurants grid !*/
+  /*! cards restaurants !*/
+  /*! sticker new!*/
+  /*! Restaurant title !*/
+  /*! like hearth block !*/
 }
 @media screen and (min-width: 768px) {
   .restaurants {
@@ -258,7 +270,7 @@ ul li a {
 .restaurants .restaurant__card-new {
   color: #008766;
   background: #99E2D0;
-  border: 0.313rem solid #99E2D0;
+  border: 0.313rem solid #99E2D3;
   border-radius: 0.313rem;
   position: absolute;
   right: 2%;
@@ -405,6 +417,7 @@ ul li a {
   padding-bottom: 4rem;
 }
 
+/*! animation loading spinner index  !*/
 .loadingspinner {
   background-color: white;
   position: fixed;
@@ -423,6 +436,7 @@ ul li a {
   animation-iteration-count: infinite;
 }
 
+/*! localisation area !*/
 .localisation {
   background: #eaeaea;
   display: flex;
@@ -434,7 +448,6 @@ ul li a {
   padding-right: 1rem;
   font-size: 1.1em;
   color: #000000c7;
-  padding-bottom: 0.4rem;
 }
 .localisation__city span {
   font-size: 1rem;
@@ -445,6 +458,7 @@ ul li a {
   color: #000000c7;
 }
 
+/*! Slogan title !*/
 .slogan {
   background: #f6f6f6;
   text-align: center;
@@ -455,6 +469,7 @@ ul li a {
   margin: 1rem 1rem 2rem 1rem;
 }
 
+/*! Process li !*/
 .process__steps li {
   margin-bottom: 1.5rem;
   display: flex;
@@ -487,6 +502,7 @@ ul li a {
   }
 }
 
+/*! Restaurant title !*/
 .menu__title {
   font-family: Shrikhand, sans-serif;
   display: flex;
@@ -502,6 +518,7 @@ ul li a {
   }
 }
 
+/*! meals block !*/
 .meals {
   background-color: #fff;
   border-radius: 0.938rem;
@@ -526,16 +543,19 @@ ul li a {
   transform: rotate(360deg);
 }
 
+/*! meals title !*/
 .meals h4 {
   margin: 0;
   font-size: 1.1em;
   padding-bottom: 0.4rem;
 }
 
+/*! margin bottom block  !*/
 .starter, .dish {
   margin-bottom: 2rem;
 }
 
+/*! Title starter dish dessert !*/
 .starter h3, .dish h3, .dessert h3 {
   padding-left: 0.625rem;
   text-transform: uppercase;
@@ -543,6 +563,7 @@ ul li a {
   font-family: "Roboto";
 }
 
+/*! second line description and price !*/
 .last__line {
   display: flex;
   justify-content: space-between;
@@ -550,6 +571,7 @@ ul li a {
   line-height: 1.5em;
 }
 
+/*! meal description !*/
 .last__line p {
   margin: 0;
   white-space: nowrap;
@@ -562,6 +584,7 @@ ul li a {
   }
 }
 
+/*! price !*/
 .last__line span {
   margin-right: 5px;
 }

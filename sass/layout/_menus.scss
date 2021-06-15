@@ -1,6 +1,10 @@
 /*! Menu layout !*/
 .main__menu {
-  @include main-menu;
+  background-color: #f6f6f6;
+  border-top-left-radius: 1.563rem;
+  border-top-right-radius: 1.563rem;
+  width: 100%;
+  transform: translateY(-50px);
   /*! Like heart icon !*/
   & .fill__heart {
     font-size: 0.9em;
@@ -27,7 +31,25 @@
 
 /*! cross logo !*/
 .cross {
-  @include cross;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  width: 3.125rem;
+  height: 4.5rem;
+  border-top-right-radius: 0.938rem;
+  border-bottom-right-radius: 0.938rem;
+  position: absolute;
+  padding: 1.25rem;
+  right: -3.125rem;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+  & .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+    font-size: 1.2em;
+  }
 }
 
 /*! order button layout !*/
