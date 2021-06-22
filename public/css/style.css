@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! color code !*/
 /*! button colors !*/
 /*! Breakpoints adaptative device !*/
@@ -136,9 +137,9 @@ body, html {
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-  /*! web browser compatibility !*/
+  /*! limite des zones d'arrière-plan !*/
   -webkit-text-fill-color: transparent;
-  /*! web browser compatibility !*/
+  /*! color of text !*/
   font-weight: bold;
 }
 
